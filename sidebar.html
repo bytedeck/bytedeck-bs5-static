@@ -1,69 +1,107 @@
-    <img id="banner" src="images/logo-1" class="img img-rounded img-responsive center-block w-100"
-        alt="My Byte Deck Banner">
-    <ul class="list-group my-3">
-        <li class="list-group-item active d-flex justify-content-between" aria-current="true">
-            <a href="#" class="active d-flex align-items-center text-white text-decoration-none"
-                aria-current="true">
-                <i class="fa fa-shield fa-fw me-1"></i> Quests
-            </a>
-            <div class="nav-item dropdown">
-                <a class="nav-link p-0" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-ellipsis-v fa-fw ms-auto text-white"></i>
-                </a>
-                <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+<div class="position-relative">
+    <div class="d-flex justify-content-between border-bottom border-gray">
+        <img id="logo" src="images/logo-1" class="img img-rounded img-responsive center-block w-100 pb-3"
+            alt="My Byte Deck Banner">
+            <img id="logo2" src="images/logo.png" class="img img-rounded img-responsive center-block w-100 pb-3" alt="MDB Logo" loading="lazy" style="display: none;" />
+    </div>
+    <button type="button" onclick="openNav()" class="bg-light border position-absolute top-0 border-start-0"
+        style="right: -46px; z-index: 9;"><i class="bi bi-arrow-left-short"></i></button>
+    <ul class="list-group mt-3 nav-list overflow-hidden">
+        <li class="mb-1">
+            <button
+                class="list-group-item border-0 dropdown-item active d-flex justify-content-between align-items-center rounded-top collapsed"
+                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                <span><i class="bi bi-shield-shaded me-3 fs-6 text-reset"></i>Quests</span> <i
+                    class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small border">
                     <li><a class="dropdown-item border-bottom py-2" href="campaigns.html"><i
-                                class="fa fa-compass fa-fw me-1"></i> Campaigns</a></li>
+                                class="bi bi-compass-fill me-1"></i> Campaigns</a></li>
                     <li><a class="dropdown-item border-bottom  py-2" href="#"> <i
-                                class="fa-sharp fa-solid fa-shield-halved me-1"></i> Draft Quests</a>
+                                class="bi bi-shield-shaded me-1 me-1"></i>
+                            Draft Quests</a>
                     </li>
-                    <li><a class="dropdown-item py-2" href="#"><i
-                                class="fa-sharp fa-solid fa-shield-halved me-1"></i> Common Quest
+                    <li><a class="dropdown-item py-2" href="#"><i class="bi bi-shield-shaded me-1 me-1"></i> Common
+                            Quest
                             Info</a></li>
                 </ul>
             </div>
         </li>
-        <li class="list-group-item d-flex justify-content-between"><a href="#"
-                class="text-reset d-flex align-items-center text-decoration-none">
-                <i class="fa fa-certificate fa-fw me-1 "></i>
-                Badges </a>
-            <div class="nav-item dropdown">
-                <a class="nav-link p-0 text-reset" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-ellipsis-v fa-fw ms-auto"></i>
-                </a>
-                <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item border-bottom py-2" href="#"><i
-                                class="fa fa-certificate fa-fw me-1"></i> Badge Types</a></li>
+        <li class="mb-1">
+            <button
+                class="list-group-item border-0 dropdown-item d-flex justify-content-between align-items-center rounded-top collapsed"
+                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse1" aria-expanded="false">
+                <span><i class="bi bi-patch-check-fill me-3 text-dark fs-6"></i>Badges</span> <i
+                    class="bi bi-chevron-down"></i>
+            </button>
+            <div class="collapse" id="dashboard-collapse1">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small border">
+                    <li><a class="dropdown-item py-2" href="#">
+                            <i class="bi bi-patch-check-fill me-1"></i> Badge Types</a></li>
                 </ul>
             </div>
         </li>
-        <li class="list-group-item"><a href="#" class="text-decoration-none text-reset"><i
-                    class="fa fa-map-signs fa-fw me-1"></i>
-                Maps</a></li>
-    </ul>
-    <ul class="list-group mb-3">
-        <li class="list-group-item"> <a href="#" class="text-decoration-none text-reset"><i
-                    class="fa-solid fa-newspaper me-1"></i>
-                Announcements</a></li>
-        <li class="list-group-item"><a href="./students.html" class="text-decoration-none text-reset"> <i
-                    class="fa fa-users fa-fw me-1"></i> Students</a></li>
-    </ul>
 
-    <ul class="list-group mb-3">
-        <li class="list-group-item"> <a href="#" class="text-decoration-none text-reset">
-                <i class="fa fa-user fa-fw me-1"></i> Profile
+        <li class="list-group-item border-0 dropdown-item rounded"><a href="#"
+                class="text-decoration-none text-reset align-items-center d-flex"><i
+                    class="bi bi-signpost-2-fill me-3 text-dark fs-6"></i>
+                Maps</a></li>
+
+        <li class="list-group-item border-0 dropdown-item rounded"> <a href="#"
+                class="text-decoration-none text-reset align-items-center d-flex"><i
+                    class="bi bi-newspaper me-3 text-dark fs-6"></i>
+                Announcements</a></li>
+        <li class="list-group-item border-0 dropdown-item rounded"><a href="students.html"
+                class="text-decoration-none text-reset align-items-center d-flex"> <i
+                    class="bi bi-people-fill me-3 fs-6 text-dark"></i> Students</a></li>
+
+        <li class="list-group-item border-0 dropdown-item"> <a href="#"
+                class="text-decoration-none text-reset align-items-center d-flex">
+                <i class="bi bi-person-fill me-3 text-dark fs-6"></i> Profile
             </a></li>
-        <li class="list-group-item"><a href="#" class="text-decoration-none text-reset">
-                <i class="fa-regular fa-image me-1"></i> Portfolio
+        <li class="list-group-item border-0 dropdown-item rounded"><a href="#"
+                class="text-decoration-none text-reset align-items-center d-flex">
+                <i class="bi bi-image me-3 text-dark fs-6"></i> Portfolio
             </a></li>
-    </ul>
-    <ul class="list-group ">
-        <li class="list-group-item active d-flex justify-content-between" aria-current="true">
-            <a href="#" class="active d-flex align-items-center text-white text-decoration-none"
+
+        <li class="list-group-item  d-flex justify-content-between border-0 dropdown-item" aria-current="true">
+            <a href="#"
+                class="active d-flex align-items-center text-reset  text-decoration-none align-items-center d-flex"
                 aria-current="true">
-                <i class="fa fa-shield fa-fw fa-rotate-180 me-1"></i> Quest Approvals
+                <i class="bi bi-shield-shaded me-3 fs-6 text-dark"></i> Quest Approvals
+
             </a>
         </li>
-
     </ul>
+
+</div>
+
+
+<script>
+    // sidebar min function
+    const element = document.getElementById("mySidebar");
+    // Function to toggle the background color
+    function openNav() {
+        if (element.style.width === "78px") {
+            element.style.width = "";
+        } else {
+            element.style.width = "78px";
+        }
+        if (element1.style.display === "none") {
+            element1.style.display = "";
+        } else {
+            element1.style.display = "none";
+        }
+        if (element2.style.display === "none") {
+            element2.style.display = "block";
+        } else {
+            element2.style.display = "none";
+        }
+    }
+
+     // sidebar min function
+     const element1 = document.getElementById("logo");
+     const element2 = document.getElementById("logo2");
+  
+</script>

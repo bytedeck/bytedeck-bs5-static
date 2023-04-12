@@ -1,4 +1,4 @@
-<header class="navbar-light bg-light border-bottom">
+<header class="navbar-light bg-light border-bottom py-2">
     <div class="container-xxl">
         <!-- Navbar -->
         <div class="row align-items-center">
@@ -6,139 +6,147 @@
                 <!-- only desktop view -->
                 <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 justify-content-start d-lg-flex d-none">
                     <a class="navbar-brand py-0" href="index.html"><img src="images/logo.png" height="37" alt="MDB Logo"
-                            loading="lazy" style="margin-top: -1px;" /></a>
+                            loading="lazy" /></a>
                     <button class="navbar-toggler px-0 pt-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-fw fa-ellipsis-v fa-lg fs-6"></i>
+                        <i class="bi bi-three-dots-vertical fs-6"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
-                            <li class="nav-item">
-                                <a class="nav-link pe-4" href="#"><i class="fa-sharp fa-solid fa-shield-halved"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-4" href="#"><i class="fa-solid fa-certificate"></i> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-4" href="#"> <i class="fa-solid fa-signs-post"></i> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"> <i class="fa-solid fa-newspaper"></i> </a>
-                            </li>
-                        </ul>
+                    <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent1">
+                        <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                            <button type="button" class="btn btn-outline-dark border fs-6"><i
+                                    class="bi bi-shield-shaded"></i></button>
+                            <button type="button" class="btn btn-outline-dark border fs-6"><i
+                                    class="bi bi-patch-check-fill"></i></button>
+                            <button type="button" class="btn btn-outline-dark border fs-6"><i
+                                    class="bi bi-signpost-2-fill "></i></button>
+                            <button type="button" class="btn btn-outline-dark border fs-6"><i class="bi bi-newspaper"></i></button>
+                        </div>
                     </div>
                 </nav>
 
                 <!-- only mobile view sidebar -->
                 <nav class="navbar navbar-expand navbar-light bg-light py-0 justify-content-start d-lg-none d-flex">
                     <a class="navbar-brand py-0" href="index.html"><img src="images/logo.png" height="37" alt="MDB Logo"
-                            loading="lazy" style="margin-top: -1px;" /></a>
+                            loading="lazy" /></a>
 
                     <div class="nav-item dropdown">
-                        <a class="nav-link p-0 border rounded-2 py-1 text-reset" href="#" id="navbarDropdown"
+                        <a class="nav-link p-0 border rounded-2 py-1 text-reset px-2" href="#" id="navbarDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa fa-fw fa-ellipsis-v fa-lg fs-6"></i>
+                            <i class="bi bi-three-dots-vertical fs-6"></i>
                         </a>
                         <ul class="dropdown-menu py-0 rounded-0 position-fixed start-0 end-0 w-100"
                             aria-labelledby="navbarDropdown" style="top: 68px;">
-                            <li><a class="dropdown-item border-bottom py-2" href="#"><i
-                                        class="fa fa-shield fa-fw me-1"></i> Quests</a></li>
+                            <li><a class="dropdown-item border-bottom py-2" href="campaigns.html"><i
+                                        class="bi bi-shield-shaded me-1"></i>Quests</a></li>
                             <li><a class="dropdown-item border-bottom  py-2" href="#"> <i
-                                        class="fa fa-certificate fa-fw me-1"></i>Badges</a>
+                                        class="bi bi-patch-check-fill me-1"></i>Badges</a>
                             </li>
                             <li><a class="dropdown-item py-2 border-bottom " href="#"><i
-                                        class="fa fa-map-signs fa-fw me-1"></i>Maps</a></li>
+                                        class="bi bi-signpost-2-fill me-1"></i>Maps</a></li>
                             <li><a class="dropdown-item py-2 border-bottom " href="#"><i
-                                        class="fa-solid fa-newspaper me-1"></i>Announcements</a></li>
+                                        class="bi bi-newspaper me-1"></i>nnouncements</a></li>
+                            <li><a class="dropdown-item py-2 border-bottom " href="students.html"><i
+                                        class="bi bi-people-fill me-1"></i>Students</a></li>
                             <li><a class="dropdown-item py-2 border-bottom " href="#"><i
-                                        class="fa fa-users fa-fw me-1"></i>Students</a></li>
+                                        class="bi bi-person-fill me-1"></i>Profile</a></li>
                             <li><a class="dropdown-item py-2 border-bottom " href="#"><i
-                                        class="fa fa-user fa-fw me-1"></i>Profile</a></li>
-                            <li><a class="dropdown-item py-2 border-bottom " href="#"><i
-                                        class="fa-regular fa-image me-1"></i>Portfolio</a></li>
+                                        class="bi bi-image me-1"></i>Portfolio</a></li>
                             <li><a class="dropdown-item py-2 border-bottom " href="#"> <i
-                                        class="fa fa-shield fa-rotate-180 fa-fw me-1"></i>Approvals</a></li>
+                                        class="bi bi-shield-fill fa-rotate-180 me-1"></i>Approvals</a></li>
 
                         </ul>
                     </div>
                 </nav>
             </div>
-
             <div class="col">
-                <nav class="navbar navbar-expand navbar-light bg-light py-md-0 py-2 justify-content-end">
+                <nav class="navbar navbar-expand navbar-light bg-light py-md-0 pt-2 pb-0 justify-content-end">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-md-3" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <!-- <a class="nav-link dropdown-toggle px-md-3" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Admin
+                                </a> -->
+                                <a class="btn btn-toggle align-items-center d-flex rounded nav-link dropdown-toggle px-md-3 px-2 badge py-2 me-3 border"
+                                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="true"
+                                    style="height: 34px;">
+                                    Account
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a class="dropdown-item" href="/config/"><i
-                                                class="fa fa-fw fa-sliders me-1"></i> Site Configuration</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="dropdown-header">Course Setup</li>
-                                    <li><a class="dropdown-item" href="/courses/ranks/"><i
-                                                class="fa fa-fw fa-star me-1"></i> Ranks</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="/tags/"><i class="fa fa-fw fa-tags me-1"></i>
-                                            &nbsp;Tags</a></li>
-                                    <li><a class="dropdown-item" href="/quests/campaigns/"><i
-                                                class="fa fa-fw fa-compass me-1"></i> Campaigns</a></li>
-                                    <li><a class="dropdown-item" href="/courses/blocks/"><i
-                                                class="fa-solid fa-people-group me-1"></i> Groups</a></li>
-                                    <li><a class="dropdown-item" href="/courses/list/"><i
-                                                class="fa fa-fw fa-book me-1"></i> Courses</a></li>
-                                    <li><a class="dropdown-item" href="/courses/semesters/">
-                                            <i class="fa-regular fa-calendar me-1"></i> Semesters</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Custom Pages</li>
-                                    <li><a class="dropdown-item" href="/utilities/custom-pages/"><i
-                                                class="fa fa-list me-1"></i> Pages</a></li>
-                                    <li><a class="dropdown-item" href="/utilities/custom-pages/create/"><i
-                                                class="fa fa-fw fa-book me-1"></i> Create Page</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Advanced</li>
-                                    <li><a class="dropdown-item" href="/admin"><i
-                                                class="fa fa-fw fa-database me-1"></i>Django Admin</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">ByteDeck</li>
-                                    <li><a class="dropdown-item"
-                                            title="Ask a question, report a bug, or request a feature!"
-                                            href="https://github.com/bytedeck/bytedeck/discussions">
-                                            <i class="fa-solid fa-comment me-1"></i> ByteDeck Forum</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                            href="https://github.com/bytedeck/bytedeck/blob/develop/CHANGELOG.md"><i
-                                                class="fa fa-fw fa-history me-1"></i> Changelog</a></li>
+                                <div class="collapse position-absolute" id="account-collapse" style="">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small bg-white border rounded"
+                                        aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="/config/"><i class="bi bi-sliders me-1"></i>
+                                                Site Configuration</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="dropdown-header">Course Setup</li>
+                                        <li><a class="dropdown-item" href="/courses/ranks/"><i
+                                                    class="bi bi-star-fill me-1"></i> Ranks</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/tags/"><i class="bi bi-tags-fill"></i>
+                                                &nbsp;Tags</a></li>
+                                        <li><a class="dropdown-item" href="/quests/campaigns/"><i
+                                                    class="bi bi-compass-fill me-1"></i> Campaigns</a></li>
+                                        <li><a class="dropdown-item" href="/courses/blocks/"><i
+                                                    class="bi bi-people me-1"></i>Groups</a></li>
+                                        <li><a class="dropdown-item" href="/courses/list/"><i
+                                                    class="bi bi-book-half me-1"></i>Courses</a></li>
+                                        <li><a class="dropdown-item" href="/courses/semesters/">
+                                                <i class="bi bi-calendar me-1"></i> Semesters</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">Custom Pages</li>
+                                        <li><a class="dropdown-item" href="/utilities/custom-pages/"><i
+                                                    class="bi bi-list-ul me-1"></i> Pages</a></li>
+                                        <li><a class="dropdown-item" href="/utilities/custom-pages/create/"><i
+                                                    class="bi bi-book-fill me-1"></i>Create Page</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">Advanced</li>
+                                        <li><a class="dropdown-item" href="/admin"><i
+                                                    class="bi bi-database me-1"></i>Django Admin</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">ByteDeck</li>
+                                        <li><a class="dropdown-item"
+                                                title="Ask a question, report a bug, or request a feature!"
+                                                href="https://github.com/bytedeck/bytedeck/discussions">
+                                                <i class="bi bi-chat-fill me-1"></i>ByteDeck Forum</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="https://github.com/bytedeck/bytedeck/blob/develop/CHANGELOG.md"><i
+                                                    class="bi bi-clock-history me-1"></i> Changelog</a></li>
 
-                                </ul>
+                                    </ul>
+                                </div>
+
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-md-3 d-flex" href="#"><i class="fa fa-bell me-1"></i><span
-                                        class="badge rounded-pill bg-danger">100</span></a>
+                                <button type="button" class="btn btn-primary position-relative py-1 px-2 me-3 me-md-0">
+                                    <i class="bi bi-bell-fill me-1"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-1">
+                                        99
+                                    </span>
+                                </button>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle ps-md-3 pe-0" href="#" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/user" height="30" class="rounded">
-                                    <span class="ms-2 d-none d-lg-inline-block"> Admin</span>
+                                <a class="nav-link dropdown-toggle ps-md-4 px-0 d-flex align-items-center py-0" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-circle fs-4"></i>
+                                    <span class="ms-2 d-none d-lg-inline-block"> <b class="">Admin</b></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-star me-1"></i>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-star-fill me-1"></i>
                                             Ranks List</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa fa-fw fa-pencil me-1"></i>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-1"></i>
                                             Edit this list</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i
-                                                class="fa-solid fa-right-from-bracket me-1"></i> Sign Out</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-1"></i>
+                                            Sign Out</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -148,4 +156,3 @@
         </div>
     </div>
 </header>
-<!-- header end here -->
