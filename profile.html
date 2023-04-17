@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/bootstrap-icons.svg">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+        integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>bytedeck-BS5
+    </title>
+</head>
+
+<body>
+    <!-- header start here -->
+    <div id="header" class="position-relative" style="z-index: 9;"></div>
+    <!-- header end here -->
+    <!-- body start here -->
+    <section class="content-view  mt-2">
+        <div class="container-xxl">
+            <div class="row ">
+                <!-------Sidebar Start------>
+                <div class="col-md-3 px-3 py-4 d-lg-inline-block d-none border border-end-0" id="mySidebar">
+                    <div id="sidebar" class="sidebar-hide"></div>
+                </div>
+                <!-------Sidebar End------>
+                <div class="col bg-white p-4 border position-relative ps-lg-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="fs-3 mb-0">Profile
+                            <div class="btn-group btn-group-sm ms-3" role="group" aria-label="Small button group">
+                                <button type="button" class="btn btn-outline-dark border fs-6"><i
+                                        class="bi bi-gear-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark border fs-6"><i
+                                        class="bi bi-key-fill"></i></button>
+                                <button type="button" class="btn btn-outline-dark border fs-6"><i
+                                        class="bi bi-file-earmark-image-fill"></i></button>
+                            </div>
+                        </h1>
+                        <i class="bi bi-person-lines-fill fs-3"></i>
+                    </div>
+
+                    <div class="d-md-flex align-items-center mt-4">
+                        <div class="flex-shrink-0">
+                            <img src="./images/profile.png" alt="" width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-md-3">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                    <strong> Admin</strong>
+                                    <strong><i class="bi bi-arrow-clockwise"></i> Digital Noob</strong>
+                                </div>
+                                <div class="card-body bg-white">
+                                    <div class="d-flex justify-content-between">
+                                        <label class="mb-1 fs-6"><strong>Next Rank: Digital Novice</strong></label>
+                                        <span>0/60 XP</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar w-0 bg-primary" role="progressbar" aria-valuenow="0"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-1">You have not joined a course yet this semester. <a
+                                            href="javascript:void(0)" class="text-decoration-none"><b>Join a
+                                                Course</b></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 align-items-stretch">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                    <strong>General</strong>
+                                </div>
+                                <div class="card-body  bg-white">
+                                    <ul>
+                                        <li>Username: admin</li>
+                                        <li>Grad Year: None. Edit your profile!</li>
+                                        <li>Account Created: March 22, 2023, 6:21 a.m. (3 weeks, 4 days ago)</li>
+                                        <li>Last Login: April 17, 2023, 3:34 a.m. (0 minutes ago)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                    <strong> Badges <button type="button" class="btn btn-warning btn-sm ms-2"><b>Grant</b></button></strong>
+                                    <i class="bi bi-patch-check-fill"></i>
+                                </div>
+                                <div class="card-body  bg-white">
+                                    <p class="mb-0">None</p>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                    <strong> XP earned by Tag <button type="button" class="btn btn-warning btn-sm ms-2"><b><i class="bi bi-sort-up-alt"></i></b></button></strong>
+                                    <i class="bi bi-bookmarks-fill"></i>
+                                </div>
+                                <div class="card-body  bg-white">
+                                    <p class="mb-0">None</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 align-items-stretch">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                    <strong>Courses</strong>
+                                    <i class="bi bi-book-fill"></i>
+                                </div>
+                                <div class="card-body  bg-white">
+                                   <p class="mb-0">Not applicable to staff users.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                    <strong>Quests</strong>
+                                    <i class="bi bi-shield-shaded"></i>
+                                </div>
+                                <div class="card-body  bg-white p-0">
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <td class="px-3">In Progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3">None</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3">Completed</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3">None</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="row mt-3 align-items-stretch">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white d-flex justify-content-between">
+                                <strong>Past Quests</strong>
+                                <i class="bi bi-shield-shaded"></i>
+                            </div>
+                            <div class="card-body  bg-white p-0">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <td class="px-3">Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-3">None</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body end here -->
+    <!-- footer start here -->
+    <div id="footer"></div>
+    <!-- footer end here -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#sidebar").load("sidebar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>

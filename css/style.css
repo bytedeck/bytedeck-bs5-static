@@ -1,0 +1,10 @@
+:root{
+    --primary: #25408f;
+}
+.btn-primary, .bg-primary, .list-group-item.active{
+    background-color: var(--primary) !important;
+    border-color: var(--primary); 
+} 
+.nav-link{
+    color: var(--primary);
+}
