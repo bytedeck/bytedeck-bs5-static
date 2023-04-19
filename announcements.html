@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- link CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/bootstrap-icons.svg">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
         integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg=="
@@ -24,7 +23,7 @@
     <div id="header" class="position-relative" style="z-index: 9;"></div>
     <!-- header end here -->
     <!-- body start here -->
-    <section class="content-view  mt-2">
+    <section class="content-view vh-100 mt-2">
         <div class="container-xxl">
             <div class="row ">
                 <!-------Sidebar Start------>
@@ -35,16 +34,14 @@
                 <div class="col bg-white p-4 border position-relative ps-lg-5">
                     <div class="d-flex justify-content-between align-items-center">
                         <h1 class="fs-3 mb-0">Announcements
-                            <div class="btn-group btn-group-sm ms-3" role="group" aria-label="Small button group">
-                                <button type="button" class="btn btn-outline-dark border fs-6 active">Current</button>
-                                <button type="button" class="btn btn-outline-dark border fs-6">Archived</button>
+                            <div class="btn-group btn-group-sm ms-md-3 rounded-pill overflow-hidden border mt-md-0 mt-3" role="group" aria-label="Small button group">
+                                <a href="announcements.html" class="btn btn-outline-dark border-0 fs-6 text-white bg-primary px-3 py-2"><b>Current</b></a>
+                                <a href="announcements-archived.html" class="btn btn-outline-dark border-0 fs-6 px-3 py-2">Archived</a> 
                             </div>
-                            <button type="button" class="btn btn-success ms-2"><i class="bi bi-plus-circle"></i> New</button>
+                            <a href="announcements-create.html" class="btn btn-success ms-2 mt-md-0 mt-3"><i class="bi bi-plus-circle"></i> New</a>
                         </h1>
                         <i class="bi bi-journal-bookmark-fill fs-3"></i>
                     </div>
-
-                        
                 </div>
             </div>
         </div>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+        integrity="sha512-yU7+yXTc4VUanLSjkZq+buQN3afNA4j2ap/mxvdr440P5aW9np9vIr2JMZ2E5DuYeC9bAoH9CuCR7SJlXAa4pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>bytedeck-BS5
+    </title>
+</head>
+
+<body>
+    <!-- header start here -->
+    <div id="header" class="position-relative" style="z-index: 9;"></div>
+    <!-- header end here -->
+    <!-- body start here -->
+    <section class="content-view mt-2">
+        <div class="container-xxl">
+            <div class="row ">
+                <!-------Sidebar Start------>
+                <div class="col-md-3 px-3 py-4 d-lg-inline-block d-none border border-end-0" id="mySidebar">
+                    <div id="sidebar" class="sidebar-hide"></div>
+                </div>
+                <!-------Sidebar End------>
+                <div class="col bg-white p-4 border position-relative ps-lg-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1 class="fs-3 mb-0">Announcements
+                        </h1>
+                        <i class="bi bi-journal-bookmark-fill fs-3"></i>
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label"><strong>Title*</strong></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label"><strong>Datetime
+                                released*</strong></label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <p class="mt-1">
+                            The time the announcement was published. If auto_publish is True, then the announcement will
+                            automatically be published at this time.
+                        </p>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Auto publish
+                            </label>
+                        </div>
+                        <p>When set to true, the announcement will publish itself on the date and time indicated.</p>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Draft
+                            </label>
+                        </div>
+                        <p>A new announcement saved as a non-draft will be published and notifications sent. Editing a
+                            previously saved draft will not send out notifications; use the Publish button on the
+                            Announcements main page.</p>
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label"><strong>Content*</strong></label>
+                        <textarea id="summernote"></textarea>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                               Sticky
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label"><strong>Sticky until</strong></label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <p class="mt-1">
+                            blank = sticky never expires
+                        </p>
+                    </div>
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label"><strong>Datetime expres</strong></label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        <p class="mt-1">
+                            blank = never
+                        </p>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                               Archived
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-end mt-3">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-light border">Cancel</button>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- body end here -->
+    <!-- footer start here -->
+    <div id="footer"></div>
+    <!-- footer end here -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- summer note  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#sidebar").load("sidebar.html");
+            $("#footer").load("footer.html");
+        });
+
+        //  summer note js
+        $('textarea#summernote').summernote({
+            placeholder: '',
+            tabsize: 2,
+            height: 300,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'hr']],
+                ['help', ['help']]
+            ],
+        });
+    </script>
+</body>
+
+</html>
